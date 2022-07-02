@@ -5,12 +5,17 @@ using namespace System.Management.Automation.Language
 
 
 
-oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH/night-owl.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH/blue-owl.omp.json | Invoke-Expression
 
+# thecyberden
 
+# powerlevel10k_rainbow
 
+# powerline
 
+# night-owl
 
+# blue-owl
 
 if ($host.Name -eq 'ConsoleHost')
 {
