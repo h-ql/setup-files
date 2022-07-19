@@ -5,7 +5,9 @@ using namespace System.Management.Automation.Language
 
 
 
-oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH/blue-owl.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH/my-theme.omp.json | Invoke-Expression
+
+# my-theme.omp.json
 
 # thecyberden
 
