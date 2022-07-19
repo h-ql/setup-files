@@ -5,16 +5,41 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#a313a8",
-          "foreground": "#FFEB3B",
+          
+          "foreground": "#fffc3b",
           "style": "plain",
-          "template": "\u26a1 ",
+          "template": "[\u26a1]",
           "type": "root"
+        },
+        {
+          "foreground": "#18f523",
+          "properties": {
+            "alpine": "\uf300",
+            "arch": "\uf303",
+            "centos": "\uf304",
+            "debian": "\uf306",
+            "elementary": "\uf309",
+            "fedora": "\uf30a",
+            "gentoo": "\uf30d",
+            "linux": "\ue712",
+            "macos": "\uf179 ",
+            "manjaro": "\uf312",
+            "mint": "\uf30f",
+            "opensuse": "\uf314",
+            "raspbian": "\uf315",
+            "ubuntu": "\uf31b ",
+            "windows": "\ufab2",
+            "wsl": "\ue712"
+          },
+          "style": "diamond",
+          "template": " [{{ if .WSL }}WSL at {{ end }}{{.Icon}}]",
+          "trailing_diamond": "<transparent,>\ue0b2</>",
+          "type": "os"
         },
         {
           "foreground": "#ffffff",
           "style": "plain",
-          "template": " {{ .UserName }}@{{ .HostName }} ",
+          "template": " {{ .UserName }} ",
           "type": "session"
         },
         {
@@ -53,12 +78,10 @@
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
-        {
-          "background": "#910000",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": "<transparent> \uf12a</> {{ .Meaning }} ",
+        {                    
+          "foreground": "#f00606",       
+          "style": "diamond",
+          "template": " \uf05a {{ .Meaning }} ",
           "type": "exit"
         }
       ],
