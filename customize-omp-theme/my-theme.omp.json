@@ -18,9 +18,9 @@
           "type": "session"
         },
         {
-          "background": "#49019b",
+          "background": "#18354c",
           "foreground": "#ffffff",
-          "leading_diamond": "<transparent,#49019b>\ue0b0</>",
+          "leading_diamond": "<transparent,#18354c>\ue0b0</>",
           "properties": {
             "folder_icon": "\uf6d7",
             "folder_separator_icon": "<transparent> \ue0bd </>",
@@ -35,11 +35,11 @@
         {
           "background": "#22da6e",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#addb67{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f78c6c{{ end }}",
-            "{{ if gt .Ahead 0 }}#21c7a8{{ end }}",
-            "{{ if gt .Behind 0 }}#c792ea{{ end }}"
-          ],
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
+            "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
+            "{{ if gt .Behind 0 }}#B388FF{{ end }}"
+          ],         
           "foreground": "#011627",
           "powerline_symbol": "\ue0b0",
           "properties": {
