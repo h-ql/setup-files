@@ -79,13 +79,9 @@
         "alignment": "right",
         "segments": [          
           {
-            "background": "#232949",
-            "foreground": "#3EC669",
-            "properties": {
-              "time_format": "15:04:05"
-            },
-            "style": "powerline",
-            "template": "<transparent> </>{{ .CurrentDate | date .Format }} ",
+            "foreground": "#ffffff",
+            "style": "plain",
+            "template": "[{{ .CurrentDate | date .Format }}]",
             "type": "time"
           }
         ],
