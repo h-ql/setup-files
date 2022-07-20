@@ -83,7 +83,7 @@
         {
           "foreground": "#f00606",
           "style": "diamond",
-          "template": " \uf088 \uf165 \uf088 {{ .Meaning }} \uf088 \uf165 \uf088 ",
+          "template": " \uf875 \uf165 \uf876 {{ .Meaning }} \uf876 \uf165 \uf875 ",
           "type": "exit"
         }
       ],
@@ -131,7 +131,7 @@
         {
           "foreground": "#0ee632",
           "style": "diamond",
-          "template": "  <#ffffff>\uf108</> {{ round .PhysicalPercentUsed .Precision }}% ",
+          "template": "  <#ffffff>\uf823</> {{ round .PhysicalPercentUsed .Precision }}% ",
           "type": "sysinfo"
         },
         {
@@ -152,6 +152,9 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
+          "properties": {
+            "always_enabled": true
+          },
           "style": "plain",
           "template": "\uf178",
           "type": "text"
