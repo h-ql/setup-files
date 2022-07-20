@@ -48,9 +48,9 @@
           "leading_diamond": "<transparent,#18354c>\ue0b0</>",
           "properties": {
             "folder_icon": "\uf6d7",
-            "folder_separator_icon": "<transparent> \ue0bd </>",
-            "home_icon": "\uf7db",
-            "style": "agnoster_short"
+            "folder_separator_icon": "<transparent> \ue0b1 </>",
+            "home_icon": "\uf7dd",
+            "style": "agnoster_full"
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
@@ -60,10 +60,10 @@
         {
           "background": "#22da6e",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
-            "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
-            "{{ if gt .Behind 0 }}#B388FF{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFA500{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#947D5C{{ end }}",
+            "{{ if gt .Ahead 0 }}#6B5199{{ end }}",
+            "{{ if gt .Behind 0 }}#6B5199{{ end }}"
           ],         
           "foreground": "#011627",
           "powerline_symbol": "\ue0b0",
@@ -81,7 +81,7 @@
         {                    
           "foreground": "#f00606",       
           "style": "diamond",
-          "template": " \uf05a {{ .Meaning }} ",
+          "template": " \uf088 \uf165 \uf088 {{ .Meaning }} \uf088 \uf165 \uf088 ",
           "type": "exit"
         }
       ],
@@ -148,6 +148,6 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏚\" }}",
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{ .Shell }} - {{ .Folder }}",
   "version": 2
 }
