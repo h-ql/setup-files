@@ -83,7 +83,7 @@
         {
           "foreground": "#f00606",
           "style": "diamond",
-          "template": " \uf875 \uf165 \uf876 {{ .Meaning }} \uf876 \uf165 \uf875 ",
+          "template": " \uf875 \uf165 \uf876 {{ .Meaning }} \uf875 \uf165 \uf876 ",
           "type": "exit"
         }
       ],
