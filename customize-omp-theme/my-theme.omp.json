@@ -133,6 +133,7 @@
       "newline": true,
       "segments": [
         {
+          
           "foreground": "#ffffff",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
