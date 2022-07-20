@@ -1,3 +1,3 @@
 # MahSETUP
 
-Keeping digital workspace files.
+Maintaining digital workspace files.
