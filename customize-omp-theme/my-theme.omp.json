@@ -42,25 +42,25 @@
           "type": "session"
         },
         {
-          "background": "#18354c",
-          "foreground": "#ffffff",
-          "leading_diamond": "<transparent,#18354c>\ue0b0</>",
+          "background": "#172e3d",
+          "foreground": "#cccccc",
+          "powerline_symbol": "\ue0b0",
           "properties": {
-            "folder_icon": "\uf6d7",
-            "folder_separator_icon": "<transparent> \ue0b1 </>",
-            "home_icon": "\uf7dd",
-            "style": "agnoster_full"
+            "folder_icon": "<#cccccc>\ue5fe</>",
+            "folder_separator_icon": "<#000000> \ue0bd </>",
+            "home_icon": "\ufb9f",
+            "max_depth": 2,
+            "style": "agnoster_short"
           },
-          "style": "diamond",
-          "template": " {{ .Path }} ",
-          "trailing_diamond": "\ue0b0",
+          "style": "powerline",
+          "template": " \uf025<#000000> \ue0bd </>{{ .Path }} ",
           "type": "path"
         },
         {
           "background": "#80ff00",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#ffff14{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ad2d2d{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFFF00{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FF3269{{ end }}",
             "{{ if gt .Ahead 0 }}#4169E1{{ end }}",
             "{{ if gt .Behind 0 }}#4169E1{{ end }}"
           ],
