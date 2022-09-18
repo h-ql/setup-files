@@ -106,10 +106,10 @@
           "type": "dotnet",
           "style": "diamond",
           "powerline_symbol": "\ue72e",
-          "foreground": "#ffffff",
-          "background": "#4949ff",
+          "foreground": "#cccccc",
+          "background": "#0000ff",
           "leading_diamond": "",
-          "trailing_diamond": "",
+          "trailing_diamond": " ",
           "properties": {
             "display_version": true,
             "prefix": "\ue72e"
@@ -127,13 +127,7 @@
           "style": "diamond",
           "template": " \uf0e7 ",
           "type": "root"
-        },
-        {
-          "foreground": "#18f523",
-          "style": "diamond",
-          "template": "  <#ffffff>\ufcbe</> {{ round .PhysicalPercentUsed .Precision }}% ",
-          "type": "sysinfo"
-        },
+        },        
         {
           "foreground": "#ffffff",
           "style": "plain",
