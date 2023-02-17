@@ -48,7 +48,6 @@
           "properties": {
             "folder_icon": "<#cccccc>\ue5fe</>",
             "folder_separator_icon": "<#000000> \ue0bd </>",
-            "home_icon": "\ufb9f",
             "max_depth": 2,
             "style": "agnoster_short"
           },
@@ -83,7 +82,7 @@
         {
           "foreground": "#f00606",
           "style": "diamond",
-          "template": " \uf875 \uf165 \uf876 {{ .Meaning }} \uf875 \uf165 \uf876 ",
+          "template": "  {{ .Meaning }} \ue009\ue009\ue009 ",
           "type": "exit"
         }
       ],
